@@ -1,4 +1,4 @@
-/* html {background-color:gray;}
+html {background-color:gray;}
 body {margin:0 auto; width:960px;}
 #main {overflow: hidden;}
 section {background-color: white; overflow: hidden; width:75%; float: left;}
@@ -33,16 +33,16 @@ footer > .mail > a:hover {text-decoration: underline;}
 
 /* 스마트폰 */
 @media screen and (max-width: 767px) {
-  body {width: auto;}
-  Menu {width: auto; float: none;}
-  section {width: auto; float: none;}
-  aside {background-color: white; width: auto; float: none; margin-top: 10px;}
+    body {width: auto;}
+    nav {width: auto; float: none;}
+    section {width: auto; float: none;}
+    aside {background-color: white; width: auto; float: none; margin-top: 10px;}
 }
 
 /* 태블릿 PC 세로 */
-/* @media screen and (min-width: 768px) and (max-width: 959px) {
-  body {width: auto;}
-  nav {width: auto; float: none;}
-  section {width: auto; float: none;}
-  aside {background-color: white; width: auto; float: none; margin-top: 10px;}
-} */
+@media screen and (min-width: 768px) and (max-width: 959px) {
+    body {width: auto;}
+    nav {width: auto; float: none;}
+    section {width: auto; float: none;}
+    aside {background-color: white; width: auto; float: none; margin-top: 10px;}
+}
