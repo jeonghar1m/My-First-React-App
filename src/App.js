@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
-import Top from "./components/Top"
-import Menu from "./components/Menu"
-import Side from "./components/Side"
-import Bottom from "./components/Bottom"
+import Top from "./layout/Top"
+import Menu from "./layout/Menu"
+import Side from "./layout/Side"
+import Bottom from "./layout/Bottom"
 
 function App() {
   return (
