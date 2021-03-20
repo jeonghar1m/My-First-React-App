@@ -1,38 +1,48 @@
-.App {
-  text-align: center;
+/* html {background-color:gray;}
+body {margin:0 auto; width:960px;}
+#main {overflow: hidden;}
+section {background-color: white; overflow: hidden; width:75%; float: left;}
+section > hr {color:gray;}
+aside {background-color: white; overflow: hidden; width:23.5%; float: right;}
+a {
+    text-decoration: none;
+    color:black;
+}
+a:hover {text-decoration: underline;}
+header {text-align:center;}
+#logo {font-size: 30pt;}
+#logo a:hover {text-decoration: none;}
+ul{overflow: hidden;}
+#menu {
+    border-radius: 10px 10px 10px 10px;
+    background-color: black;
+}
+#menu > li{
+    list-style: none;
+    float:left;
+    padding:15px;
+}
+#menu > li > a{color:white;}
+#menu > li > a:hover {text-decoration: none;}
+#menu > li:first-child{padding-left:0px;}
+footer {background-color: black; margin-top:20px;}
+footer > .mail {color: white; text-align: center;}
+footer > .mail > a {color:white;}
+footer > .mail > a:hover {text-decoration: underline;}
+#copy {color:white; text-align: center; padding: 20px;}
+
+/* 스마트폰 */
+@media screen and (max-width: 767px) {
+  body {width: auto;}
+  Menu {width: auto; float: none;}
+  section {width: auto; float: none;}
+  aside {background-color: white; width: auto; float: none; margin-top: 10px;}
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* 태블릿 PC 세로 */
+/* @media screen and (min-width: 768px) and (max-width: 959px) {
+  body {width: auto;}
+  nav {width: auto; float: none;}
+  section {width: auto; float: none;}
+  aside {background-color: white; width: auto; float: none; margin-top: 10px;}
+} */
