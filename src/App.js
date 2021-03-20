@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import './components/Bottom.css'
-import './components/Menu.css'
-import './components/Side.css'
-import './components/Top.css'
 import Top from "./components/Top"
 import Menu from "./components/Menu"
 import Side from "./components/Side"
