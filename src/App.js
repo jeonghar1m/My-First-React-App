@@ -20,7 +20,6 @@ function App() {
             <h1>Main Page</h1>
             <hr />
             <p>My First React Web</p>
-            <p>테스트 환경(기기): Chrome Browser(PC), iPhone 12 Pro(6.1"), iPad Pro 11"</p>
             <h2>사이트맵</h2>
             <ul>
                 <li>메인페이지</li>
