@@ -1,18 +1,43 @@
 import React, { Component } from 'react';
 import './App.css';
 import Menu from './components/Menu';
-import Contents from './components/Contents'
+import SideMenu from './components/SideMenu';
+import MainPage from './components/MainPage';
+import About from './components/About';
+import Timetable from './components/Timetable';
+import Playlist from './components/Playlist';
+import Login from './components/Login';
+import Register from './components/Register';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      contents: [
-        {id:1, title:"자기소개"},
-        {id:2, title:"시간표"},
-        {id:3, title:"플레이리스트"}
-      ]
+      page:'main'
     }
+  }
+  getContent() {
+    var _section = null;
+    if(this.state.page === 'main') {
+      _section = <MainPage></MainPage>
+    }
+    else if(this.state.page === 'about') {
+      _section = <About></About>
+    }
+    else if(this.state.page === 'timetable') {
+      _section = <Timetable></Timetable>
+    }
+    else if(this.state.page === 'playlist') {
+      _section = <Playlist></Playlist>
+    }
+    else if(this.state.page === 'login') {
+      _section = <Login></Login>
+    }
+    else if(this.state.page === 'register') {
+      _section = <Register></Register>
+    }
+
+    return _section;
   }
   render () {
     return (
@@ -21,17 +46,39 @@ class App extends Component {
           <header>
             <span id="logo"><a href="../">정하림</a></span>
           </header>
-          <Menu></Menu>
+          <Menu onChangePage={function(_page){
+            if(_page === 'about') {
+              this.setState({
+                page:'about'
+              })
+            }
+            else if(_page === 'timetable') {
+              this.setState({
+                page:'timetable'
+              })
+            }
+            else if(_page === 'playlist') {
+              this.setState({
+                page:'playlist'
+              })
+            }
+          }.bind(this)}> 
+          </Menu>
           <div id="main">
-            <Contents title="Main Page"></Contents>
-            <aside>
-              <h4>메뉴</h4>
-              <ul>
-                <li><a href="login.php">로그인</a></li>
-                <li><a href="register.php">회원가입</a></li>
-                <li><a href="http://hongik.ac.kr" target="_blank">홍익대학교</a></li>
-              </ul>
-            </aside>
+          <SideMenu onChangePage={function(_page){
+            if(_page === 'login') {
+              this.setState({
+                page:'login'
+              })
+            }
+            else if(_page === 'register') {
+              this.setState({
+                page:'register'
+              })
+            }
+          }.bind(this)
+          }></SideMenu>
+          {this.getContent()}
           </div>
           <footer>
             <div class="mail">Mail: <a href="mailto:harim97714@mail.hongik.ac.kr">harim97714@mail.hongik.ac.kr</a></div>

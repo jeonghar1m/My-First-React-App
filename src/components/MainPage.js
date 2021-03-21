@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 
-class Contents extends Component {
+class MainPage extends Component {
     render() {
       return (
         <section>
-            <h1>{this.props.title}</h1>
+            <h1>Main Page</h1>
             <hr />
             <p>My First React Web</p>
             <h2>사이트맵</h2>
@@ -21,4 +21,4 @@ class Contents extends Component {
     }
   }
 
-  export default Contents;
+  export default MainPage;
